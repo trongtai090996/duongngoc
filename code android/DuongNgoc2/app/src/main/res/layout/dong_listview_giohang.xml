@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/imghinhgiohang"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvtenmonangiohang"
+            android:textSize="30sp"
+            android:text="Tên món ăn"
+            android:textColor="#03A9F4"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvgiamonangiohang"
+            android:textSize="30sp"
+            android:text="Giá món ăn"
+            android:textColor="#F44336"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btconggiohang"
+                android:text="+"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <TextView
+
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="1"
+                android:id="@+id/tvsoluonggiohang"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bttrugiohang"
+                android:text="-"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

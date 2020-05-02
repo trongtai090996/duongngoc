@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông tin đặt đồ ăn"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#F44336"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:gravity="center"
+        android:id="@+id/edtdiadiem"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="Nhập địa điểm giao đồ ăn"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:inputType="text"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đặt ngay"
+            android:id="@+id/btdatmon"
+            android:textSize="20sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quay về"
+            android:id="@+id/btquayve"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"/>
+    </LinearLayout>
+
+</LinearLayout>
