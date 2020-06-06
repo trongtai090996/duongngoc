@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mã đơn hàng"
+        android:textSize="15sp"
+        android:id="@+id/tvmadonhangquanli"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mã tài khoản"
+        android:textSize="15sp"
+        android:id="@+id/tvmataikhoanquanli"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ngày đặt"
+        android:textSize="15sp"
+        android:id="@+id/tvngaydatquanli"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Địa điểm giao hàng"
+        android:textSize="15sp"
+        android:id="@+id/tvdiadiemquanli"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Phí giao"
+        android:id="@+id/tvphigiaoquanli"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Tổng tiền"
+        android:id="@+id/tvtongtienquanli"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Tình trạng đơn hàng"
+        android:id="@+id/tvtinhtrangquanli"/>
+
+
+</LinearLayout>

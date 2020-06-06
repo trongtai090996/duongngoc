@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/qlloaimonan"
+        android:icon="@drawable/fork"
+        android:title="Quản lý loại món ăn"/>
+    <item android:id="@+id/qlmonan"
+        android:title="Quản lý món ăn"
+        android:icon="@drawable/diet"/>
+    <item android:id="@+id/qldonhang"
+        android:icon="@drawable/tracking"
+        android:title="Quản lý đơn hàng"/>
+    <item android:id="@+id/qlbinhluan"
+        android:icon="@drawable/ic_comment_black_24dp"
+        android:title="Quản lý bình luận"/>
+    <item android:id="@+id/qltaikhoan"
+        android:title="Quản lý tài khoản"
+        android:icon="@drawable/user"/>
+    <item android:id="@+id/thongke"
+        android:title="Thống kê"
+        android:icon="@drawable/report"/>
+    <item android:id="@+id/dangxuat"
+        android:title="Đăng xuất"
+        android:icon="@drawable/logout"
+        />
+</menu>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ChiTietMonAn"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/imghinhanhctsp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Ten mon an"
+                android:id="@+id/tvtenmonanctsp"
+                android:textColor="#03A9F4"
+                android:textSize="20sp"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gia"
+                android:id="@+id/tvgiactsp"
+                android:textColor="#F44336"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đặt ngay"
+                android:textSize="15sp"
+                android:textColor="#C00EC6"
+                android:id="@+id/btdatngay"
+                android:layout_weight="5"
+                android:drawableLeft="@drawable/oderfood"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thêm vào giỏ hàng"
+                android:textSize="15sp"
+                android:textColor="#C00EC6"
+                android:id="@+id/btaddgiohang"
+                android:layout_weight="5"
+                android:drawableLeft="@drawable/addcart2"
+                />
+        </LinearLayout>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabGravity="fill"/>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

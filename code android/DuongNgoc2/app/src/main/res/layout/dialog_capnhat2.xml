@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#000"
+        android:text="Đổi mật khẩu"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:text="Mật khẩu cũ"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/edtmkcu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập mật khẩu cũ"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:text="Mật khẩu mới"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/edtmkmoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập mật khẩu mới"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:text="Nhập lại mật khẩu mới"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/edtmkmoilai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập lại mật khẩu mới"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btokdoimk"
+            android:text="Đổi mật khẩu"
+            android:textSize="20sp"/>
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bthuydoimk"
+            android:text="Hủy"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+</LinearLayout>

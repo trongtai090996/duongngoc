@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DatMonAnActivity"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Thông tin đặt món ăn"
+        android:textColor="#4CAF50"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên món ăn"
+        android:id="@+id/tvtendatmon"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giá món ăn"
+        android:id="@+id/tvgiadatmon"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số lượng"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"/>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="7">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btcongdat"
+            android:text="+"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:id="@+id/tvsoluongdat"/>
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bttrudat"
+            android:text="-"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thành tiền"
+        android:id="@+id/tvtongtiendat"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hình thức nhận món ăn:"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/grouphinhthuc">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giao đến nhà"
+            android:checked="true"
+            android:id="@+id/radiodennha"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhận tại nhà hàng"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/radionhahang"/>
+    </RadioGroup>
+    <TextView
+        android:id="@+id/tvdiengiai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:layout_marginLeft="20sp"
+        android:visibility="visible"
+        android:text="Địa điểm giao món ăn ( Để đảm bảo độ tươi ngon của món ăn, nhà hàng sẽ chỉ giao trong một số khu vực nhất định)"/>
+
+    <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerhuyen"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:visibility="visible"/>
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerxaphuong"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:visibility="visible"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập địa chỉ cụ thể( Số nhà, đường...)"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:id="@+id/edtdiachidat"
+        android:visibility="visible"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvphigiaohang"
+        android:text="Phí ship( Chỉ tính khi giao đến nhà): 0 đ"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:visibility="visible"/>
+
+
+    <Button
+        android:id="@+id/btthuchiendat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thực hiện đặt món"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"/>
+    <Button
+        android:id="@+id/btquayvedat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quay về trang chủ"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"/>
+
+
+
+
+</LinearLayout>
